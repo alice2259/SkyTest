@@ -68,12 +68,12 @@
                     </div>
                     <div class="col-sm-8">
                         <div class="slidecontainer">
-                          <input type="range" min="1" max="5" value="3" class="slider" id="calmAgi">
-                          <p>Chosen: <span id="calmAgiValue"></span></p>
+                          <input type="range" min="1" max="5" value="3" class="slider" id="calmStressed">
+                          <p>Chosen: <span id="calmStressedValue"></span></p>
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <h4 style="text-align: right;">Agitated</h4>
+                        <h4 style="text-align: right;">Stressed</h4>
                     </div>
                 </div>
 
@@ -179,8 +179,8 @@
       output1.innerHTML = this.value;
     };
     
-    var slider2 = document.getElementById("calmAgi");
-    var output2 = document.getElementById("calmAgiValue");
+    var slider2 = document.getElementById("calmStressed");
+    var output2 = document.getElementById("calmStressedValue");
     output2.innerHTML = slider2.value;
 
     slider2.oninput = function() {
