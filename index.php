@@ -117,7 +117,7 @@
                 </div>                
                 <div class="row">
                     <div class="col-sm-2 offset-1">
-                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
                             <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
                             <h5>No content</h5>
@@ -125,7 +125,7 @@
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
                             <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
                             <h5>No content</h5>
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
                             <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
                             <h5>No content</h5>
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
                             <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
                             <h5>No content</h5>
@@ -149,7 +149,7 @@
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
                             <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
                             <h5>No content</h5>
