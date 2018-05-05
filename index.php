@@ -13,110 +13,161 @@
     <title>Sky | Moodslider</title>
   </head>
   <body>
-      <nav class="navbar navbar-expand-sm navbar-light">
-        <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/sky-logo.jpg" alt="Sky logo" style="width: 80px;"/></a>
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Watch</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Manage</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Help</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Upload</a>
-                </li>
-            </ul>
-        </div>
-        </div>
-      </nav>
-      
-      <section class="container-fluid">
-          <div class="container" style="text-align: center;">
-            <h1>Moodslider</h1>
-            <h3>Not sure what to watch?</h3>
-            <p>Move the sliders to reflect your mood and we'll suggest the perfect programme.</p>
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/sky-logo.jpg" alt="Sky logo" style="width: 80px;"/></a>
+              <!-- Toggler/collapsibe Button -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Watch</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Manage</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Help</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Upload</a>
+                  </li>
+              </ul>
           </div>
-      </section>
-      
-      <section class="container-fluid" style="background-color: #F1F1F3;">
-          <div class="container" style="text-align: center;">
-              
-              <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
-                  <div class="col-sm-3">
-                      <h3>Happy</h3>
-                  </div>
-                  
-                  <div class="col-sm-6">
-                      <div class="slidecontainer">
-                        <input type="range" min="1" max="5" value="3" class="slider" id="happySad">
-                        <p>Chosen: <span id="happySadValue"></span></p>
-                      </div>
-                  </div>
-                  
-                  <div class="col-sm-3">
-                      <h3>Sad</h3>
-                  </div>
-              </div>
-              
-              
-              <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
-                  <div class="col-sm-3">
-                      <h3>Calm</h3>
-                  </div>
-                  <div class="col-sm-6">
-                      <div class="slidecontainer">
-                        <input type="range" min="1" max="5" value="3" class="slider" id="calmAgi">
-                        <p>Chosen: <span id="calmAgiValue"></span></p>
-                      </div>
-                  </div>
-                  <div class="col-sm-3">
-                      <h3>Agitated</h3>
-                  </div>
-              </div>
-              
-              <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
-                  <div class="col-sm-3">
-                      <h3>Tired</h3>
-                  </div>
-                  <div class="col-sm-6">
-                      <div class="slidecontainer">
-                        <input type="range" min="1" max="5" value="3" class="slider" id="tiredAwake">
-                        <p>Chosen: <span id="tiredAwakeValue"></span></p>
-                      </div>
-                  </div>
-                  <div class="col-sm-3">
-                      <h3>Wide awake</h3>
-                  </div>
-              </div>
-              
-              <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
-                  <div class="col-sm-3">
-                      <h3>Brave</h3>
-                  </div>
-                  <div class="col-sm-6">
-                      <div class="slidecontainer">
-                        <input type="range" min="1" max="5" value="3" class="slider" id="braveScared">
-                        <p>Chosen: <span id="braveScaredValue"></span></p>
-                      </div>
-                  </div>
-                  <div class="col-sm-3">
-                      <h3>Scared</h3>
-                  </div>
-              </div>
           </div>
-      </section>
+        </nav>
+
+        <section class="container-fluid">
+            <div class="container" style="text-align: center;">
+              <h1>Moodslider</h1>
+              <h3>Not sure what to watch?</h3>
+              <p>Move the sliders to reflect your mood and we'll suggest the perfect programme.</p>
+            </div>
+        </section>
+
+        <section class="container-fluid" style="background-color: #F1F1F3;">
+            <div class="container" style="text-align: center;">
+
+                <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
+                    <div class="col-sm-2">
+                        <h4 style="text-align: left;">Happy</h4>
+                    </div>
+
+                    <div class="col-sm-8">
+                        <div class="slidecontainer">
+                          <input type="range" min="1" max="5" value="3" class="slider" id="happySad">
+                          <p>Chosen: <span id="happySadValue"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <h4 style="text-align: right;">Sad</h4>
+                    </div>
+                </div>
+
+
+                <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
+                    <div class="col-sm-2">
+                        <h4 style="text-align: left;">Calm</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="slidecontainer">
+                          <input type="range" min="1" max="5" value="3" class="slider" id="calmAgi">
+                          <p>Chosen: <span id="calmAgiValue"></span></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4 style="text-align: right;">Agitated</h4>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
+                    <div class="col-sm-2">
+                        <h4 style="text-align: left;">Tired</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="slidecontainer">
+                          <input type="range" min="1" max="5" value="3" class="slider" id="tiredAwake">
+                          <p>Chosen: <span id="tiredAwakeValue"></span></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4 style="text-align: right;">Wide awake</h4>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
+                    <div class="col-sm-2">
+                        <h4 style="text-align: left;">Brave</h4>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="slidecontainer">
+                          <input type="range" min="1" max="5" value="3" class="slider" id="braveScared">
+                          <p>Chosen: <span id="braveScaredValue"></span></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4 style="text-align: right;">Scared</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="container" style="text-align: center;">
+                <div style="padding-bottom: 20px;">
+                <h1>Watch right now</h1>
+                <h3>Based on your mood</h3>
+                </div>                
+                <div class="row">
+                    <div class="col-sm-2 offset-1">
+                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                            <div style="padding:5px;">
+                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                            <h5>No content</h5>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                            <div style="padding:5px;">
+                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                            <h5>No content</h5>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                            <div style="padding:5px;">
+                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                            <h5>No content</h5>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                            <div style="padding:5px;">
+                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                            <h5>No content</h5>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                            <div style="padding:5px;">
+                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                            <h5>No content</h5>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
       
           
       
