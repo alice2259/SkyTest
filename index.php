@@ -52,8 +52,8 @@
 
                     <div class="col-sm-8">
                         <div class="slidecontainer">
-                            <input type="range" min="1" max="5" value="3" class="slider" id="happySad">
-                          <p><span id="happySadValue">Move the slider to describe your mood</span></p>
+                            <input type="range" min="1" max="5" value="3" class="slider" id="happy">
+                          <p><span id="happyValue">Move the slider to describe your mood</span></p>
                         </div>
                     </div>
 
@@ -69,8 +69,8 @@
                     </div>
                     <div class="col-sm-8">
                         <div class="slidecontainer">
-                          <input type="range" min="1" max="5" value="3" class="slider" id="calmStressed">
-                          <p>Chosen: <span id="calmStressedValue"></span></p>
+                          <input type="range" min="1" max="5" value="3" class="slider" id="calm">
+                          <p><span id="calmValue">Move the slider to describe your mood</span></p>
                         </div>
                     </div>
                     <div class="col-sm-2">
@@ -84,8 +84,8 @@
                     </div>
                     <div class="col-sm-8">
                         <div class="slidecontainer">
-                          <input type="range" min="1" max="5" value="3" class="slider" id="tiredAwake">
-                          <p>Chosen: <span id="tiredAwakeValue"></span></p>
+                          <input type="range" min="1" max="5" value="3" class="slider" id="tired">
+                          <p><span id="tiredValue">Move the slider to describe your mood</span></p>
                         </div>
                     </div>
                     <div class="col-sm-2">
@@ -99,8 +99,8 @@
                     </div>
                     <div class="col-sm-8">
                         <div class="slidecontainer">
-                          <input type="range" min="1" max="5" value="3" class="slider" id="braveScared">
-                          <p>Chosen: <span id="braveScaredValue"></span></p>
+                          <input type="range" min="1" max="5" value="3" class="slider" id="brave">
+                          <p><span id="braveValue">Move the slider to describe your mood</span></p>
                         </div>
                     </div>
                     <div class="col-sm-2">
@@ -172,19 +172,63 @@
       
       
     <script>
-        var slider1 = document.getElementById("happySad");
-        var moodValue1 = slider1.value;
+        var happySlider = document.getElementById("happy");
         
-        slider1.oninput = function () {
-            moodValue1 = this.value;
+        happySlider.oninput = function () {
+            happyValue = this.value;
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
                 if (this.readyState === 4 && this.status === 200) {
-                    document.getElementById("happySadValue").innerHTML = this.responseText;
+                    document.getElementById("happyValue").innerHTML = this.responseText;
                 }
             }
             
-            xmlhttp.open("Get", "getMoodFunctions.php?mood=happySad&moodValue=" + moodValue1, true);
+            xmlhttp.open("Get", "getMoodFunctions.php?mood=happy&moodValue=" + happyValue, true);
+            xmlhttp.send();
+        };
+        
+        var calmSlider = document.getElementById("calm");
+        
+        calmSlider.oninput = function () {
+            calmValue = this.value;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    document.getElementById("calmValue").innerHTML = this.responseText;
+                }
+            }
+            
+            xmlhttp.open("Get", "getMoodFunctions.php?mood=calm&moodValue=" + calmValue, true);
+            xmlhttp.send();
+        };
+        
+        var tiredSlider = document.getElementById("tired");
+        
+        tiredSlider.oninput = function () {
+            tiredValue = this.value;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    document.getElementById("tiredValue").innerHTML = this.responseText;
+                }
+            }
+            
+            xmlhttp.open("Get", "getMoodFunctions.php?mood=tired&moodValue=" + tiredValue, true);
+            xmlhttp.send();
+        };
+        
+        var braveSlider = document.getElementById("brave");
+        
+        braveSlider.oninput = function () {
+            braveValue = this.value;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    document.getElementById("braveValue").innerHTML = this.responseText;
+                }
+            }
+            
+            xmlhttp.open("Get", "getMoodFunctions.php?mood=brave&moodValue=" + braveValue, true);
             xmlhttp.send();
         };
      
