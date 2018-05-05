@@ -23,19 +23,10 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Watch</a>
+                      <a class="nav-link" href="index.php">Moodslider</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Manage</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Help</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Upload</a>
+                      <a class="nav-link" href="upload.php">Upload</a>
                   </li>
               </ul>
           </div>
@@ -50,7 +41,7 @@
             </div>
         </section>
 
-        <section class="container-fluid" style="background-color: #F1F1F3;">
+        <section class="container-fluid slider-section" style="background-color: #F1F1F3;">
             <div class="container" style="text-align: center;">
 
                 <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
@@ -169,7 +160,7 @@
             </div>
         </section>
         
-      <footer class="page-footer container-fluid" style="padding-top: 30px; margin-top: 60px; background-color: #F1F1F3">
+      <footer class="page-footer container-fluid">
           <p>&copy; Sky Moodslider 2018</p>
       </footer>
           
