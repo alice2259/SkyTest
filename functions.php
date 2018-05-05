@@ -28,4 +28,5 @@ function uploadFile()   {
     if (file_exists($tmpFile)) {
         unlink($tmpFile);
     }
+//    return $permFile;
 }

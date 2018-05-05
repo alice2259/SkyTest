@@ -1,4 +1,5 @@
 <!doctype html>
+<?php session_start(); ?>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -51,8 +52,8 @@
 
                     <div class="col-sm-8">
                         <div class="slidecontainer">
-                          <input type="range" min="1" max="5" value="3" class="slider" id="happySad">
-                          <p>Chosen: <span id="happySadValue"></span></p>
+                            <input type="range" min="1" max="5" value="3" class="slider" id="happySad">
+                          <p><span id="happySadValue">Move the slider to describe your mood</span></p>
                         </div>
                     </div>
 
@@ -171,37 +172,23 @@
       
       
     <script>
-    var slider1 = document.getElementById("happySad");
-    var output1 = document.getElementById("happySadValue");
-    output1.innerHTML = slider1.value;
-
-    slider1.oninput = function() {
-      output1.innerHTML = this.value;
-    };
-    
-    var slider2 = document.getElementById("calmStressed");
-    var output2 = document.getElementById("calmStressedValue");
-    output2.innerHTML = slider2.value;
-
-    slider2.oninput = function() {
-      output2.innerHTML = this.value;
-    };
-
-    var slider3 = document.getElementById("tiredAwake");
-    var output3 = document.getElementById("tiredAwakeValue");
-    output3.innerHTML = slider3.value;
-
-    slider3.oninput = function() {
-      output3.innerHTML = this.value;
-    };
-
-    var slider4 = document.getElementById("braveScared");
-    var output4 = document.getElementById("braveScaredValue");
-    output4.innerHTML = slider4.value;
-
-    slider4.oninput = function() {
-      output4.innerHTML = this.value;
-    };
+        var slider1 = document.getElementById("happySad");
+        var moodValue1 = slider1.value;
+        
+        slider1.oninput = function () {
+            moodValue1 = this.value;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    document.getElementById("happySadValue").innerHTML = this.responseText;
+                }
+            }
+            
+            xmlhttp.open("Get", "getMoodFunctions.php?mood=happySad&moodValue=" + moodValue1, true);
+            xmlhttp.send();
+        };
+     
+       
     </script>      
       
   
