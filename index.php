@@ -168,7 +168,10 @@
                 </div>
             </div>
         </section>
-      
+        
+      <footer class="page-footer container-fluid" style="padding-top: 30px; margin-top: 60px; background-color: #F1F1F3">
+          <p>&copy; Sky Moodslider 2018</p>
+      </footer>
           
       
       
