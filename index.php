@@ -41,7 +41,7 @@
             </div>
         </section>
 
-        <section class="container-fluid slider-section" style="background-color: #F1F1F3;">
+        <section class="container-fluid ">
             <div class="container" style="text-align: center;">
 
                 <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
@@ -109,7 +109,7 @@
             </div>
         </section>
 
-        <section class="container-fluid">
+        <section class="container-fluid slider-section">
             <div class="container" style="text-align: center;">
                 <div style="padding-bottom: 20px;">
                 <h1>Watch right now</h1>

@@ -20,7 +20,8 @@ body    {
 }
 
 .slider-section {
-    background: linear-gradient(to right, #C9C8D1, #FEFEFE, #FEFEFE, #C9C8D1); 
+    background: linear-gradient(to right, #cccdd5, #FEFEFE, #cccdd5);
+    padding: 30px;
 }
 
 .programme-box  {
