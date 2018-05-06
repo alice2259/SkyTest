@@ -120,40 +120,40 @@
                     <div class="col-sm-2 offset-1">
                         <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
-                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                            <h5>No content</h5>
+                                <img id="image1" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                                <h5 id="title1">No content</h5>
                         </div>
                         </div>
                     </div>
                     <div class="col-sm-2">
                         <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
-                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                            <h5>No content</h5>
+                                <img id="image2" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                            <h5 id="title2">No content</h5>
                         </div>
                         </div>
                     </div>
                     <div class="col-sm-2">
                         <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
-                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                            <h5>No content</h5>
+                                <img id="image3" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                                <h5 id="title3">No content</h5>
                         </div>
                         </div>
                     </div>
                     <div class="col-sm-2">
                         <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
-                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                            <h5>No content</h5>
+                                <img id="image4" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                                <h5 id="title4">No content</h5>
                         </div>
                         </div>
                     </div>
                     <div class="col-sm-2">
                         <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
-                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                            <h5>No content</h5>
+                                <img id="image5" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                                <h5 id="title5">No content</h5>
                         </div>
                         </div>
                     </div>
@@ -166,80 +166,9 @@
       </footer>
           
       
-      
-      
-      
-      
-      
-    <script>
-//    Happy slider    
-    var happySlider = document.getElementById("happy");
-        
-    happySlider.oninput = function () {
-        happyValue = this.value;
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState === 4 && this.status === 200) {
-                document.getElementById("happyValue").innerHTML = this.responseText;
-            }
-        }
 
-        xmlhttp.open("Get", "getMoodFunctions.php?mood=happy&moodValue=" + happyValue, true);
-        xmlhttp.send();
-    };
-       
-//    Calm slider
-    var calmSlider = document.getElementById("calm");
-
-    calmSlider.oninput = function () {
-        calmValue = this.value;
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState === 4 && this.status === 200) {
-                document.getElementById("calmValue").innerHTML = this.responseText;
-            }
-        }
-
-        xmlhttp.open("Get", "getMoodFunctions.php?mood=calm&moodValue=" + calmValue, true);
-        xmlhttp.send();
-    };
-        
-//    Tired slider
-    var tiredSlider = document.getElementById("tired");
-
-    tiredSlider.oninput = function () {
-        tiredValue = this.value;
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState === 4 && this.status === 200) {
-                document.getElementById("tiredValue").innerHTML = this.responseText;
-            }
-        }
-
-        xmlhttp.open("Get", "getMoodFunctions.php?mood=tired&moodValue=" + tiredValue, true);
-        xmlhttp.send();
-    };
-        
-//    Brave slider
-    var braveSlider = document.getElementById("brave");
-
-    braveSlider.oninput = function () {
-        braveValue = this.value;
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState === 4 && this.status === 200) {
-                document.getElementById("braveValue").innerHTML = this.responseText;
-            }
-        }
-
-        xmlhttp.open("Get", "getMoodFunctions.php?mood=brave&moodValue=" + braveValue, true);
-        xmlhttp.send();
-    };
-     
-    </script>      
-      
-  
-      
+    <!--Project JavaScript-->      
+    <script src="scripts.js"></script>
       
       
     <!-- Optional JavaScript -->

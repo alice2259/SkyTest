@@ -26,7 +26,7 @@ function howCalm($moodValue) {
         return "Feeling fairly chill";
     }
     else if ($moodValue == 3){
-        return "You are middling";
+        return "Feeling fine";
     }
     else if ($moodValue == 4){
         return "Feeling a bit stressed";
@@ -88,7 +88,7 @@ else if ($mood == "brave")   {
     $moodDescription = howBrave($moodValue);
 }
 
-echo $moodDescription;
+//echo $moodDescription
 
 
 
