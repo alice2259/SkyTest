@@ -16,7 +16,7 @@
   <body>
         <nav class="navbar navbar-expand-sm navbar-light">
           <div class="container">
-          <a class="navbar-brand" href="#"><img src="images/sky-logo.jpg" alt="Sky logo" style="width: 80px;"/></a>
+          <a class="navbar-brand" href="https://www.sky.com/"><img src="images/sky-logo.jpg" alt="Sky logo" style="width: 80px;"/></a>
               <!-- Toggler/collapsibe Button -->
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <span class="navbar-toggler-icon"></span>

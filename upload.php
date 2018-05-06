@@ -17,7 +17,7 @@
       <?php include 'functions.php'; ?>
         <nav class="navbar navbar-expand-sm navbar-light">
           <div class="container">
-          <a class="navbar-brand" href="#"><img src="images/sky-logo.jpg" alt="Sky logo" style="width: 80px;"/></a>
+          <a class="navbar-brand" href="https://www.sky.com/"><img src="images/sky-logo.jpg" alt="Sky logo" style="width: 80px;"/></a>
               <!-- Toggler/collapsibe Button -->
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <span class="navbar-toggler-icon"></span>
@@ -44,6 +44,7 @@
                 <form action="upload.php" method="post" enctype="multipart/form-data">
                     <div style="padding-bottom: 20px;">
                         <h4>Select the file you would like to upload</h4>
+                        <p>Make sure it's a .xml file</p>
                     </div>
                     <input type="hidden" name="MAX_FILE_SIZE" value="100000000">
                     <input type="file" name="uploadedFile" id="uploadedFile">
