@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding=”UTF-8”?>
+<!--Checking if v2 gets uploaded-->
+<programmes>
+    <programme mood="happy">
+        <title>Love Actually</title>
+        <image>love-actually.jpg</image>
+    </programme>
+    <programme mood="happy">
+        <title>Hot Rod</title>
+        <image>hot-rod.jpg</image>
+    </programme>
+    <programme mood="happy">
+        <title>Stardust</title>
+        <image>stardust.jpg</image>
+    </programme>
+    <programme mood="happy">
+        <title>She's The Man</title>
+        <image>shes-the-man.jpg</image>
+    </programme>
+    <programme mood="happy">
+        <title>The Help</title>
+        <image>the-help.jpg</image>
+    </programme>
+
+    <programme mood="sad">
+        <title>The Hunger Games</title>
+        <image>hunger-games.jpg</image>
+    </programme>
+    <programme mood="sad">
+        <title>Life of Pi</title>
+        <image>life-of-pi.jpg</image>
+    </programme>
+    <programme mood="sad">
+        <title>Silver Linings Playbook</title>
+        <image>silver-linings-playbook.jpg</image>
+    </programme>
+    <programme mood="sad">
+        <title>Lilo and Stitch</title>
+        <image>lilo-and-stitch.jpg</image>
+    </programme>
+    <programme mood="sad">
+        <title>The Best Exotic Marigold Hotel</title>
+        <image>best-exotic.jpg</image>
+    </programme>
+
+    <programme mood="calm">
+        <title>The Secret Life of Walter Mitty</title>
+        <image>walter-mitty.jpg</image>
+    </programme>
+    <programme mood="calm">
+        <title>Juno</title>
+        <image>juno.jpg</image>
+    </programme>
+    <programme mood="calm">
+        <title>A Long Way Down</title>
+        <image>long-way-down.jpg</image>
+    </programme>
+    <programme mood="calm">
+        <title>The Matador</title>
+        <image>matador.jpg</image>
+    </programme>
+    <programme mood="calm">
+        <title>Big Hero 6</title>
+        <image>big-hero-6.jpg</image>
+    </programme>
+
+    <programme mood="stressed">
+        <title>27 Dresses</title>
+        <image>27-dresses.jpg</image>
+    </programme>
+    <programme mood="stressed">
+        <title>The Princess Bride</title>
+        <image>princess-bride.jpg</image>
+    </programme>
+    <programme mood="stressed">
+        <title>The Lion King</title>
+        <image>lion-king.jpg</image>
+    </programme>
+    <programme mood="stressed">
+        <title>Clueless</title>
+        <image>clueless.jpg</image>
+    </programme>
+    <programme mood="stressed">
+        <title>The Wizard of Oz</title>
+        <image>wizard-of-oz.jpg</image>
+    </programme>
+
+    <programme mood="tired">
+        <title>Finding Dory</title>
+        <image>finding-dory.jpg</image>
+    </programme>
+    <programme mood="tired">
+        <title>Annie</title>
+        <image>annie.jpg</image>
+    </programme>
+    <programme mood="tired">
+        <title>The Devil Wears Prada</title>
+        <image>devil-wears-prada.jpg</image>
+    </programme>
+    <programme mood="tired">
+        <title>E.T. The Extra Terrestrial</title>
+        <image>e-t.jpg</image>
+    </programme>
+    <programme mood="tired">
+        <title>500 Days of Summer</title>
+        <image>500-days.jpg</image>
+    </programme>
+
+    <programme mood="awake">
+        <title>Memento</title>
+        <image>memento.jpg</image>
+    </programme>
+    <programme mood="awake">
+        <title>Seven</title>
+        <image>seven.jpg</image>
+    </programme>
+    <programme mood="awake">
+        <title>The Prestige</title>
+        <image>the-prestige.jpg</image>
+    </programme>
+    <programme mood="awake">
+        <title>Gone Girl</title>
+        <image>gone-girl.jpg</image>
+    </programme>
+    <programme mood="awake">
+        <title>Shutter island</title>
+        <image>shutter-island.jpg</image>
+    </programme>
+
+    <programme mood="brave">
+        <title>Get Out</title>
+        <image>get-out.jpg</image>
+    </programme>
+    <programme mood="brave">
+        <title>It</title>
+        <image>it.jpg</image>
+    </programme>
+    <programme mood="brave">
+        <title>Psycho</title>
+        <image>psycho.jpg</image>
+    </programme>
+    <programme mood="brave">
+        <title>The Ring</title>
+        <image>the-ring.jpg</image>
+    </programme>
+    <programme mood="brave">
+        <title>Jaws</title>
+        <image>jaws.jpg</image>
+    </programme>
+
+    <programme mood="scared">
+        <title>Toy Story</title>
+        <image>toy-story.jpg</image>
+    </programme>
+    <programme mood="scared">
+        <title>Shrek</title>
+        <image>shrek.jpg</image>
+    </programme>
+    <programme mood="scared">
+        <title>Home Alone</title>
+        <image>home-alone.jpg</image>
+    </programme>
+    <programme mood="scared">
+        <title>Matilda</title>
+        <image>matilda.jpg</image>
+    </programme>
+    <programme mood="scared">
+        <title>The Lego Movie</title>
+        <image>lego-movie.jpg</image>
+    </programme>
+</programmes>

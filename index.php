@@ -1,4 +1,5 @@
 <!doctype html>
+<?php session_start(); ?>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -15,7 +16,7 @@
   <body>
         <nav class="navbar navbar-expand-sm navbar-light">
           <div class="container">
-          <a class="navbar-brand" href="#"><img src="images/sky-logo.jpg" alt="Sky logo" style="width: 80px;"/></a>
+          <a class="navbar-brand" href="https://www.sky.com/"><img src="images/sky-logo.jpg" alt="Sky logo" style="width: 80px;"/></a>
               <!-- Toggler/collapsibe Button -->
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <span class="navbar-toggler-icon"></span>
@@ -41,7 +42,7 @@
             </div>
         </section>
 
-        <section class="container-fluid slider-section" style="background-color: #F1F1F3;">
+        <section class="container-fluid ">
             <div class="container" style="text-align: center;">
 
                 <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
@@ -51,8 +52,8 @@
 
                     <div class="col-sm-8">
                         <div class="slidecontainer">
-                          <input type="range" min="1" max="5" value="3" class="slider" id="happySad">
-                          <p>Chosen: <span id="happySadValue"></span></p>
+                            <input type="range" min="1" max="5" value="3" class="slider" id="happy">
+                          <p><span id="happyValue">Move the slider to describe your mood</span></p>
                         </div>
                     </div>
 
@@ -68,12 +69,12 @@
                     </div>
                     <div class="col-sm-8">
                         <div class="slidecontainer">
-                          <input type="range" min="1" max="5" value="3" class="slider" id="calmAgi">
-                          <p>Chosen: <span id="calmAgiValue"></span></p>
+                          <input type="range" min="1" max="5" value="3" class="slider" id="calm">
+                          <p><span id="calmValue">Move the slider to describe your mood</span></p>
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <h4 style="text-align: right;">Agitated</h4>
+                        <h4 style="text-align: right;">Stressed</h4>
                     </div>
                 </div>
 
@@ -83,8 +84,8 @@
                     </div>
                     <div class="col-sm-8">
                         <div class="slidecontainer">
-                          <input type="range" min="1" max="5" value="3" class="slider" id="tiredAwake">
-                          <p>Chosen: <span id="tiredAwakeValue"></span></p>
+                          <input type="range" min="1" max="5" value="3" class="slider" id="tired">
+                          <p><span id="tiredValue">Move the slider to describe your mood</span></p>
                         </div>
                     </div>
                     <div class="col-sm-2">
@@ -98,8 +99,8 @@
                     </div>
                     <div class="col-sm-8">
                         <div class="slidecontainer">
-                          <input type="range" min="1" max="5" value="3" class="slider" id="braveScared">
-                          <p>Chosen: <span id="braveScaredValue"></span></p>
+                          <input type="range" min="1" max="5" value="3" class="slider" id="brave">
+                          <p><span id="braveValue">Move the slider to describe your mood</span></p>
                         </div>
                     </div>
                     <div class="col-sm-2">
@@ -109,7 +110,7 @@
             </div>
         </section>
 
-        <section class="container-fluid">
+        <section class="container-fluid slider-section">
             <div class="container" style="text-align: center;">
                 <div style="padding-bottom: 20px;">
                 <h1>Watch right now</h1>
@@ -117,42 +118,42 @@
                 </div>                
                 <div class="row">
                     <div class="col-sm-2 offset-1">
-                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
-                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                            <h5>No content</h5>
+                                <img id="image1" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                                <h5 id="title1">No content</h5>
                         </div>
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
-                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                            <h5>No content</h5>
+                                <img id="image2" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                            <h5 id="title2">No content</h5>
                         </div>
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
-                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                            <h5>No content</h5>
+                                <img id="image3" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                                <h5 id="title3">No content</h5>
                         </div>
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
-                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                            <h5>No content</h5>
+                                <img id="image4" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                                <h5 id="title4">No content</h5>
                         </div>
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey;">
+                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
                             <div style="padding:5px;">
-                            <img src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                            <h5>No content</h5>
+                                <img id="image5" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
+                                <h5 id="title5">No content</h5>
                         </div>
                         </div>
                     </div>
@@ -165,47 +166,9 @@
       </footer>
           
       
-      
-      
-      
-      
-      
-    <script>
-    var slider1 = document.getElementById("happySad");
-    var output1 = document.getElementById("happySadValue");
-    output1.innerHTML = slider1.value;
 
-    slider1.oninput = function() {
-      output1.innerHTML = this.value;
-    };
-    
-    var slider2 = document.getElementById("calmAgi");
-    var output2 = document.getElementById("calmAgiValue");
-    output2.innerHTML = slider2.value;
-
-    slider2.oninput = function() {
-      output2.innerHTML = this.value;
-    };
-
-    var slider3 = document.getElementById("tiredAwake");
-    var output3 = document.getElementById("tiredAwakeValue");
-    output3.innerHTML = slider3.value;
-
-    slider3.oninput = function() {
-      output3.innerHTML = this.value;
-    };
-
-    var slider4 = document.getElementById("braveScared");
-    var output4 = document.getElementById("braveScaredValue");
-    output4.innerHTML = slider4.value;
-
-    slider4.oninput = function() {
-      output4.innerHTML = this.value;
-    };
-    </script>      
-      
-  
-      
+    <!--Project JavaScript-->      
+    <script src="scripts.js"></script>
       
       
     <!-- Optional JavaScript -->
