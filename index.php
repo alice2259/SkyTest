@@ -167,8 +167,8 @@
           
       
 
-    <!--Project JavaScript-->      
-    <script src="scripts.js"></script>
+    <!--Page JavaScript-->      
+    <script src="indexScript.js"></script>
       
       
     <!-- Optional JavaScript -->

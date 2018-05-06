@@ -1,7 +1,9 @@
 <?php
 require_once 'getMoodFunctions.php';
 
-$xmlProgrammes = simplexml_load_file("xmlFiles/programmes.xml");
+$programmeFile = "xmlFiles/programmes.xml";
+
+$xmlProgrammes = simplexml_load_file($programmeFile);
 
 $happyImages = $xmlProgrammes->xpath('/programmes/programme[@mood="happy"]/image');
 $happyTitles = $xmlProgrammes->xpath('/programmes/programme[@mood="happy"]/title');
