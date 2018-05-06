@@ -1,63 +1,41 @@
 <?php
 require_once 'getMoodFunctions.php';
 
+libxml_use_internal_errors(true);
+
 $xmlProgrammes = simplexml_load_file("xmlFiles/programmes.xml");
 
-$happyImages = $xmlProgrammes->xpath('/programmes/programme[@mood="happy"]/image');
+<<<<<<< HEAD
+=======
+if ($xmlProgrammes === false) {
+    echo "Failed loading XML: ";
+    foreach(libxml_get_errors() as $error) {
+        echo "<br>", $error->message;
+    }
+}
+
+$happyImagePaths = $xmlProgrammes->xpath('/programmes/programme[@mood="happy"]/image');
 $happyTitles = $xmlProgrammes->xpath('/programmes/programme[@mood="happy"]/title');
 
-$sadImages = $xmlProgrammes->xpath('/programmes/programme[@mood="sad"]/image');
-$sadTitles = $xmlProgrammes->xpath('/programmes/programme[@mood="sad"]/title');
+//print_r($happyImagePaths);
 
-$calmImages = $xmlProgrammes->xpath('/programmes/programme[@mood="calm"]/image');
-$calmTitles = $xmlProgrammes->xpath('/programmes/programme[@mood="calm"]/title');
+$imagePath1 = "images/".$happyImagePaths[0];
+$title1 = $happyTitles[0];
 
-$stressedImages = $xmlProgrammes->xpath('/programmes/programme[@mood="stressed"]/image');
-$stressedTitles = $xmlProgrammes->xpath('/programmes/programme[@mood="stressed"]/title');
+$imagePath2 = "images/".$happyImagePaths[1];
+$title2 = $happyTitles[1];
 
-$tiredImages = $xmlProgrammes->xpath('/programmes/programme[@mood="tired"]/image');
-$tiredTitles = $xmlProgrammes->xpath('/programmes/programme[@mood="tired"]/title');
+$imagePath3 = "images/".$happyImagePaths[2];
+$title3 = $happyTitles[2];
 
-$awakeImages = $xmlProgrammes->xpath('/programmes/programme[@mood="awake"]/image');
-$awakeTitles = $xmlProgrammes->xpath('/programmes/programme[@mood="awake"]/title');
+$imagePath4 = "images/".$happyImagePaths[3];
+$title4 = $happyTitles[3];
 
-$braveImages = $xmlProgrammes->xpath('/programmes/programme[@mood="brave"]/image');
-$braveTitles = $xmlProgrammes->xpath('/programmes/programme[@mood="brave"]/title');
+$imagePath5 = "images/".$happyImagePaths[4];
+$title5 = $happyTitles[4];
 
-$scaredImages = $xmlProgrammes->xpath('/programmes/programme[@mood="scared"]/image');
-$scaredTitles = $xmlProgrammes->xpath('/programmes/programme[@mood="scared"]/title');
+echo $moodDescription."[BRK]".$imagePath1."[BRK]".$title1."[BRK]".$imagePath2."[BRK]".
+        $title2."[BRK]".$imagePath3."[BRK]".$title3."[BRK]".$imagePath4."[BRK]".$title4.
+        "[BRK]".$imagePath5."[BRK]".$title5;
 
-function getImages($moodValue, $leftImages, $rightImages) {
-        switch ($moodValue)    {
-            case 1:
-            case 2:
-            case 3:
-                $images = $leftImages;
-                return $images;
-            break;
-            case 4:
-            case 5:
-                $images = $rightImages;
-                return $images;
-            break;
-        }
-        return $images;
-}
-
-function getTitles($moodValue, $leftTitles, $rightTitles) {
-        switch ($moodValue)    {
-            case 1:
-            case 2:
-            case 3:
-                $titles = $leftTitles;
-                return $titles;
-            break;
-            case 4:
-            case 5:
-                $titles = $rightTitles;
-                return $titles;
-            break;
-        }
-        return $titles;
-}
-
+>>>>>>> parent of d7c2101... functionality done
