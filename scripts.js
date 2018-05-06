@@ -10,6 +10,14 @@
                 document.getElementById("happyValue").innerHTML = data[0];
                 document.getElementById("image1").src = data[1];
                 document.getElementById("title1").innerHTML = data[2];
+                document.getElementById("image2").src = data[3];
+                document.getElementById("title2").innerHTML = data[4];
+                document.getElementById("image3").src = data[5];
+                document.getElementById("title3").innerHTML = data[6];
+                document.getElementById("image4").src = data[7];
+                document.getElementById("title4").innerHTML = data[8];
+                document.getElementById("image5").src = data[9];
+                document.getElementById("title5").innerHTML = data[10];
             }
         }
 
@@ -25,7 +33,19 @@
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
-                document.getElementById("calmValue").innerHTML = this.responseText;
+                data = xmlhttp.responseText.split ( "[BRK]" );
+                document.getElementById("calmValue").innerHTML = data[0];
+                document.getElementById("image1").src = data[1];
+                document.getElementById("title1").innerHTML = data[2];
+                document.getElementById("image2").src = data[3];
+                document.getElementById("title2").innerHTML = data[4];
+                document.getElementById("image3").src = data[5];
+                document.getElementById("title3").innerHTML = data[6];
+                document.getElementById("image4").src = data[7];
+                document.getElementById("title4").innerHTML = data[8];
+                document.getElementById("image5").src = data[9];
+                document.getElementById("title5").innerHTML = data[10];
+                
             }
         }
 
@@ -41,7 +61,18 @@
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
-                document.getElementById("tiredValue").innerHTML = this.responseText;
+                data = xmlhttp.responseText.split ( "[BRK]" );
+                document.getElementById("tiredValue").innerHTML = data[0];
+                document.getElementById("image1").src = data[1];
+                document.getElementById("title1").innerHTML = data[2];
+                document.getElementById("image2").src = data[3];
+                document.getElementById("title2").innerHTML = data[4];
+                document.getElementById("image3").src = data[5];
+                document.getElementById("title3").innerHTML = data[6];
+                document.getElementById("image4").src = data[7];
+                document.getElementById("title4").innerHTML = data[8];
+                document.getElementById("image5").src = data[9];
+                document.getElementById("title5").innerHTML = data[10];
             }
         }
 
@@ -57,7 +88,18 @@
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
-                document.getElementById("braveValue").innerHTML = this.responseText;
+                data = xmlhttp.responseText.split ( "[BRK]" );
+                document.getElementById("braveValue").innerHTML = data[0];
+                document.getElementById("image1").src = data[1];
+                document.getElementById("title1").innerHTML = data[2];
+                document.getElementById("image2").src = data[3];
+                document.getElementById("title2").innerHTML = data[4];
+                document.getElementById("image3").src = data[5];
+                document.getElementById("title3").innerHTML = data[6];
+                document.getElementById("image4").src = data[7];
+                document.getElementById("title4").innerHTML = data[8];
+                document.getElementById("image5").src = data[9];
+                document.getElementById("title5").innerHTML = data[10];
             }
         }
 

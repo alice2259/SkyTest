@@ -59,7 +59,7 @@ function howBrave($moodValue)    {
         return "Let's find something on the scary side...";
     }
     else if ($moodValue == 2){
-        return "Here are some onptions to keep you on your toes";
+        return "Here are some options to keep you on your toes";
     }
     else if ($moodValue == 3){
         return "Nothing too scary then";
