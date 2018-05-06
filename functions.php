@@ -20,7 +20,7 @@ function uploadFile()   {
     checkUpload();
         
     $tmpFile = $_FILES[InputKey]['tmp_name'];
-    $permFile= 'xmlFiles/'.$_FILES[InputKey]['name'];
+    $permFile= 'xmlFiles/programmes.xml';
 
     if (!move_uploaded_file($tmpFile, $permFile)) {
         die ("Error. File not moved.");
@@ -28,5 +28,4 @@ function uploadFile()   {
     if (file_exists($tmpFile)) {
         unlink($tmpFile);
     }
-//    return $permFile;
 }

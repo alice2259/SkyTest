@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding=”UTF-8”?>
-<!--Checking if v2 gets uploaded-->
+<!--This file should overwrite the existing programmes.xml-->
 <programmes>
     <programme mood="happy">
         <title>Love Actually</title>

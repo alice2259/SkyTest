@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="SkyTestStyles.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Cutive+Mono" rel="stylesheet">
 
     <title>Upload</title>
   </head>
@@ -44,15 +44,30 @@
                 <form action="upload.php" method="post" enctype="multipart/form-data">
                     <div style="padding-bottom: 20px;">
                         <h4>Select the file you would like to upload</h4>
-                        <p>Make sure it's a .xml file</p>
+                        <p>Make sure it's an XML file</p>
                     </div>
                     <input type="hidden" name="MAX_FILE_SIZE" value="100000000">
                     <input type="file" name="uploadedFile" id="uploadedFile">
-                    <input type="submit" value="Upload File" name="upload"><br/>
+                    <input type="submit" value="Upload File" name="upload" id="uploadButton" onclick="return confirm('Uploading a new file will overwrite any exisitng programme data, are you sure?');"><br/>
                             <?php
                             if (isset($_POST["upload"])) {
                                 uploadFile();
                             }   ?>
+                    <div style="margin: 10px; margin-top: 20px; padding:10px; background-color: #ffffff;">
+                            <p>The format of your file should be as follows:</p>
+                            <p style="text-align: left; font-family: 'Cutive Mono', monospace;">&lt;programmes&gt;<br/>
+                            &emsp;&lt;programme mood="mood"&gt;<br/>
+                            &emsp;&emsp;&lt;title&gt;Programme Title&lt;/title&gt;<br/>
+                            &emsp;&emsp;&lt;image&gt;imagepath.jpg&lt;/image&gt;<br/>
+                            &emsp;&lt;/programme&gt;<br/>
+                            &emsp;&lt;programme mood="mood"&gt;<br/>
+                            &emsp;&emsp;&lt;title&gt;Programme Title&lt;/title&gt;<br/>
+                            &emsp;&emsp;&lt;image&gt;imagepath.jpg&lt;/image&gt;<br/>
+                            &emsp;&lt;/programme&gt;<br/>
+                            &lt;/programmes&gt;<br/>
+                            
+                        </p>
+                    </div>
                 </form>
                 </div>
                 <div class="col-sm-3"></div>
@@ -66,7 +81,9 @@
           </div>
       </footer>
     
-      
+    <!--Page JavaScript-->      
+    <script src="uploadScript.js"></script>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
