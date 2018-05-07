@@ -48,10 +48,11 @@
                     </div>
                     <input type="hidden" name="MAX_FILE_SIZE" value="100000000">
                     <input type="file" name="uploadedFile" id="uploadedFile">
-                    <input type="submit" value="Upload File" name="upload" id="uploadButton" onclick="return confirm('Uploading a new file will overwrite any exisitng programme data, are you sure?');"><br/>
+                    <input type="submit" value="Upload File" name="upload" id="uploadButton" onclick="return confirm('Uploading a new file will overwrite any exisitng programme data, are you sure?');"<br/>
                             <?php
                             if (isset($_POST["upload"])) {
                                 uploadFile();
+                                header('Location: http://localhost/SkyTest/index.php');
                             }   ?>
                     <div style="margin: 10px; margin-top: 20px; padding:10px; background-color: #ffffff;">
                             <p>The format of your file should be as follows:</p>

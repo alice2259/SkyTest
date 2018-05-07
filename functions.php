@@ -25,6 +25,8 @@ function uploadFile()   {
     if (!move_uploaded_file($tmpFile, $permFile)) {
         die ("Error. File not moved.");
     }
+    if (move_uploaded_file($tmpFile, $permFile))    {
+    }
     if (file_exists($tmpFile)) {
         unlink($tmpFile);
     }
