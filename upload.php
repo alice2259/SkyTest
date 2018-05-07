@@ -58,11 +58,11 @@
                             <p style="text-align: left; font-family: 'Cutive Mono', monospace;">&lt;programmes&gt;<br/>
                             &emsp;&lt;programme mood="mood"&gt;<br/>
                             &emsp;&emsp;&lt;title&gt;Programme Title&lt;/title&gt;<br/>
-                            &emsp;&emsp;&lt;image&gt;imagepath.jpg&lt;/image&gt;<br/>
+                            &emsp;&emsp;&lt;image&gt;file-name.jpg&lt;/image&gt;<br/>
                             &emsp;&lt;/programme&gt;<br/>
                             &emsp;&lt;programme mood="mood"&gt;<br/>
                             &emsp;&emsp;&lt;title&gt;Programme Title&lt;/title&gt;<br/>
-                            &emsp;&emsp;&lt;image&gt;imagepath.jpg&lt;/image&gt;<br/>
+                            &emsp;&emsp;&lt;image&gt;file-name.jpg&lt;/image&gt;<br/>
                             &emsp;&lt;/programme&gt;<br/>
                             &lt;/programmes&gt;<br/>
                             

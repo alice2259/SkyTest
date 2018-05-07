@@ -53,9 +53,20 @@ body    {
     margin-bottom: 20px;
 }
 
+.programme-image    {
+    max-width: 100%;
+    margin-bottom: 10px;
+    display: block;
+    width: auto;
+}
+
 .page-footer    {
-    margin-top: 60px;
     background-color: #F1F1F3;
+}
+
+.slider-row {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .slidecontainer {
