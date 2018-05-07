@@ -48,21 +48,22 @@
                     </div>
                     <input type="hidden" name="MAX_FILE_SIZE" value="100000000">
                     <input type="file" name="uploadedFile" id="uploadedFile">
-                    <input type="submit" value="Upload File" name="upload" id="uploadButton" onclick="return confirm('Uploading a new file will overwrite any exisitng programme data, are you sure?');"><br/>
+                    <input type="submit" value="Upload File" name="upload" id="uploadButton" onclick="return confirm('Uploading a new file will overwrite any exisitng programme data, are you sure?');"<br/>
                             <?php
                             if (isset($_POST["upload"])) {
                                 uploadFile();
+                                header('Location: http://localhost/SkyTest/index.php');
                             }   ?>
                     <div style="margin: 10px; margin-top: 20px; padding:10px; background-color: #ffffff;">
                             <p>The format of your file should be as follows:</p>
                             <p style="text-align: left; font-family: 'Cutive Mono', monospace;">&lt;programmes&gt;<br/>
                             &emsp;&lt;programme mood="mood"&gt;<br/>
                             &emsp;&emsp;&lt;title&gt;Programme Title&lt;/title&gt;<br/>
-                            &emsp;&emsp;&lt;image&gt;imagepath.jpg&lt;/image&gt;<br/>
+                            &emsp;&emsp;&lt;image&gt;file-name.jpg&lt;/image&gt;<br/>
                             &emsp;&lt;/programme&gt;<br/>
                             &emsp;&lt;programme mood="mood"&gt;<br/>
                             &emsp;&emsp;&lt;title&gt;Programme Title&lt;/title&gt;<br/>
-                            &emsp;&emsp;&lt;image&gt;imagepath.jpg&lt;/image&gt;<br/>
+                            &emsp;&emsp;&lt;image&gt;file-name.jpg&lt;/image&gt;<br/>
                             &emsp;&lt;/programme&gt;<br/>
                             &lt;/programmes&gt;<br/>
                             

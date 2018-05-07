@@ -33,19 +33,24 @@
           </div>
           </div>
         </nav>
-
-        <section class="container-fluid">
+      
+      <div class="hero">
+          <div class="row justify-content-center" style="padding-top: 30px;">
+            <div class="col-md-6 hero-logo">
+            </div>
+        </div>
+          <div class="row" style="padding-bottom: 30px;">
+            <div class="col-md-12">
+            <h1 class="bigH1">Moodslider</h1> 
+            </div>
+        </div>
+      </div>
+      
+      <section class="container-fluid" style="padding: 20px;">
             <div class="container" style="text-align: center;">
-              <h1>Moodslider</h1>
               <h3>Not sure what to watch?</h3>
               <p>Move the sliders to reflect your mood and we'll suggest the perfect programme.</p>
-            </div>
-        </section>
-
-        <section class="container-fluid ">
-            <div class="container" style="text-align: center;">
-
-                <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
+                <div class="row slider-row">
                     <div class="col-sm-2">
                         <h4 style="text-align: left;">Happy</h4>
                     </div>
@@ -63,7 +68,7 @@
                 </div>
 
 
-                <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
+                <div class="row slider-row" style="padding-top: 5px; padding-bottom: 5px;">
                     <div class="col-sm-2">
                         <h4 style="text-align: left;">Calm</h4>
                     </div>
@@ -78,7 +83,7 @@
                     </div>
                 </div>
 
-                <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
+                <div class="row slider-row" style="padding-top: 5px; padding-bottom: 5px;">
                     <div class="col-sm-2">
                         <h4 style="text-align: left;">Tired</h4>
                     </div>
@@ -93,7 +98,7 @@
                     </div>
                 </div>
 
-                <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
+                <div class="row slider-row" style="padding-top: 5px; padding-bottom: 20px;">
                     <div class="col-sm-2">
                         <h4 style="text-align: left;">Brave</h4>
                     </div>
@@ -110,51 +115,52 @@
             </div>
         </section>
 
-        <section class="container-fluid slider-section">
+        <section class="container-fluid grad-background">
             <div class="container" style="text-align: center;">
                 <div style="padding-bottom: 20px;">
-                <h1>Watch right now</h1>
-                <h3>Based on your mood</h3>
+                <h3>What to watch based on your mood</h3>
                 </div>                
-                <div class="row">
-                    <div class="col-sm-2 offset-1">
-                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
-                            <div style="padding:5px;">
-                                <img id="image1" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                                <h5 id="title1">No content</h5>
-                        </div>
+                <div class="row justify-content-center" style="padding-bottom: 30px;">
+                    <div class="col-md-2">
+                        <div class="programme-box">
+                            <div style="padding: 5px;">
+                                <div>
+                                    <img class="programme-image" id="image1" src="images/no-image.png">
+                                </div>
+                                <h6 id="title1">No content</h6>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
+                    <div class="col-md-2">
+                        <div class="programme-box">
                             <div style="padding:5px;">
                                 <img id="image2" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                            <h5 id="title2">No content</h5>
-                        </div>
+                            <h6 id="title2">No content</h6>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
+                    <div class="col-md-2">
+                        <div class="programme-box">
                             <div style="padding:5px;">
                                 <img id="image3" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                                <h5 id="title3">No content</h5>
-                        </div>
+                                <h6 id="title3">No content</h6>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
+                    <div class="col-md-2">
+                        <div class="programme-box">
                             <div style="padding:5px;">
                                 <img id="image4" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                                <h5 id="title4">No content</h5>
-                        </div>
+                                <h6 id="title4">No content</h6>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div style="box-shadow: 0px 0px 10px lightgrey; background-color: #ffffff;">
+                    <div class="col-md-2">
+                        <div class="programme-box">
                             <div style="padding:5px;">
                                 <img id="image5" src="images/no-image.png" style="max-width: 100%; margin-bottom: 10px;">
-                                <h5 id="title5">No content</h5>
-                        </div>
+                                <h6 id="title5">No content</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
